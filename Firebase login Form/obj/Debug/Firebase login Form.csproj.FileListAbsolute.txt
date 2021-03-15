@@ -1,0 +1,26 @@
+G:\Projects\Firebase login Form\Firebase login Form\bin\Debug\Firebase login Form.exe.config
+G:\Projects\Firebase login Form\Firebase login Form\bin\Debug\Firebase login Form.exe
+G:\Projects\Firebase login Form\Firebase login Form\bin\Debug\Firebase login Form.pdb
+G:\Projects\Firebase login Form\Firebase login Form\bin\Debug\FireSharp.dll
+G:\Projects\Firebase login Form\Firebase login Form\bin\Debug\Microsoft.Threading.Tasks.dll
+G:\Projects\Firebase login Form\Firebase login Form\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+G:\Projects\Firebase login Form\Firebase login Form\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+G:\Projects\Firebase login Form\Firebase login Form\bin\Debug\Newtonsoft.Json.dll
+G:\Projects\Firebase login Form\Firebase login Form\bin\Debug\System.Net.Http.Extensions.dll
+G:\Projects\Firebase login Form\Firebase login Form\bin\Debug\System.Net.Http.Primitives.dll
+G:\Projects\Firebase login Form\Firebase login Form\bin\Debug\Microsoft.Threading.Tasks.xml
+G:\Projects\Firebase login Form\Firebase login Form\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+G:\Projects\Firebase login Form\Firebase login Form\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+G:\Projects\Firebase login Form\Firebase login Form\bin\Debug\Newtonsoft.Json.xml
+G:\Projects\Firebase login Form\Firebase login Form\bin\Debug\System.Net.Http.Extensions.xml
+G:\Projects\Firebase login Form\Firebase login Form\bin\Debug\System.Net.Http.Primitives.xml
+G:\Projects\Firebase login Form\Firebase login Form\obj\Debug\Firebase login Form.csproj.App.config
+G:\Projects\Firebase login Form\Firebase login Form\obj\Debug\Firebase login Form.csprojAssemblyReference.cache
+G:\Projects\Firebase login Form\Firebase login Form\obj\Debug\Firebase_login_Form.Form1.resources
+G:\Projects\Firebase login Form\Firebase login Form\obj\Debug\Firebase_login_Form.frmRegister.resources
+G:\Projects\Firebase login Form\Firebase login Form\obj\Debug\Firebase_login_Form.Properties.Resources.resources
+G:\Projects\Firebase login Form\Firebase login Form\obj\Debug\Firebase login Form.csproj.GenerateResource.cache
+G:\Projects\Firebase login Form\Firebase login Form\obj\Debug\Firebase login Form.csproj.CoreCompileInputs.cache
+G:\Projects\Firebase login Form\Firebase login Form\obj\Debug\Firebase login Form.csproj.CopyComplete
+G:\Projects\Firebase login Form\Firebase login Form\obj\Debug\Firebase login Form.exe
+G:\Projects\Firebase login Form\Firebase login Form\obj\Debug\Firebase login Form.pdb
