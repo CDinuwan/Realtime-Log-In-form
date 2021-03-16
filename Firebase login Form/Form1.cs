@@ -51,8 +51,8 @@ namespace Firebase_login_Form
                 }
                 else
                 {
-                    FirebaseResponse response = client.Get("Users/");
-                    Dictionary<string, register> result = response.ResultAs<Dictionary<string, register>>();
+                    FirebaseResponse response1 = client.Get("Users/");
+                    Dictionary<string, register> result = response1.ResultAs<Dictionary<string, register>>();
 
                     foreach (var get in result)
                     {
@@ -66,12 +66,14 @@ namespace Firebase_login_Form
                                 MessageBox.Show("Welcome " + textBox1.Text);
                                 usernamepass = textBox1.Text;
                                 this.Hide();
+                                frmHome frm = new frmHome();
+                                frm.ShowDialog();
                             }
                         }
                     }
                 }
             }
-            catch(NullReferenceException er)
+            catch(NullReferenceException)
             {
                 MessageBox.Show("Your ID is didn't match. Please signup again!");
             }

@@ -46,7 +46,11 @@ namespace Firebase_login_Form
                 register res = response.ResultAs<register>();
                 MessageBox.Show("Register account successfully");
                 textBox1.Text = String.Empty;
-                textBox2.Text = String.Empty;                    
+                textBox2.Text = String.Empty;
+                textBox3.Text = String.Empty;
+                this.Dispose();
+                Form1 frm = new Form1();
+                frm.ShowDialog();
                     }
         }
 
