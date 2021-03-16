@@ -51,27 +51,39 @@ namespace Firebase_login_Form
                 }
                 else
                 {
-                    FirebaseResponse response1 = client.Get("Users/");
-                    Dictionary<string, register> result = response1.ResultAs<Dictionary<string, register>>();
+                    FirebaseResponse response = client.Get("Users/");
+                    Dictionary<string, register> result = response.ResultAs<Dictionary<string, register>>();
+                    
 
-                    foreach (var get in result)
+                    foreach (var chat in result)
                     {
-                        string userresult = get.Value.username;
-                        string passresult = get.Value.password;
+                        string userresult = (chat.Value.username).ToString();
+                        string passresult = (chat.Value.password).ToString();
 
                         if (textBox1.Text == userresult)
                         {
-                            if (textBox2.Text == passresult)
+                            if (textBox2.Text != passresult)
                             {
                                 MessageBox.Show("Welcome " + textBox1.Text);
                                 usernamepass = textBox1.Text;
                                 this.Hide();
                                 frmHome frm = new frmHome();
                                 frm.ShowDialog();
+                                break;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Wrong credentials");
+                                break;
                             }
                         }
+                        else
+                        {
+                            MessageBox.Show("Wrong credentials");
+                            break;
+                        }
                     }
-                }
+                }   
             }
             catch(NullReferenceException)
             {
