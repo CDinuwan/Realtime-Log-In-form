@@ -51,37 +51,21 @@ namespace Firebase_login_Form
                 }
                 else
                 {
-                    FirebaseResponse response = client.Get("Users/");
-                    Dictionary<string, register> result = response.ResultAs<Dictionary<string, register>>();
-                    
-
-                    foreach (var chat in result)
+                    FirebaseResponse response = client.Get(@"Users/");
+                    register ResUser = response.ResultAs<register>();
+                    register CurUser = new register
                     {
-                        string userresult = (chat.Value.username).ToString();
-                        string passresult = (chat.Value.password).ToString();
-
-                        if (textBox1.Text == userresult)
-                        {
-                            if (textBox2.Text != passresult)
-                            {
-                                MessageBox.Show("Welcome " + textBox1.Text);
-                                usernamepass = textBox1.Text;
-                                this.Hide();
-                                frmHome frm = new frmHome();
-                                frm.ShowDialog();
-                                break;
-                            }
-                            else
-                            {
-                                MessageBox.Show("Wrong credentials");
-                                break;
-                            }
-                        }
-                        else
-                        {
-                            MessageBox.Show("Wrong credentials");
-                            break;
-                        }
+                        username = textBox1.Text,
+                        password=textBox2.Text
+                    };
+                    if(register.IsEqual(ResUser,CurUser))
+                    {
+                        frmHome frm = new frmHome();
+                        frm.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error");
                     }
                 }   
             }
@@ -128,5 +112,25 @@ namespace Firebase_login_Form
         public string username { get; internal set; }
         public string password { get; internal set; }
         public string id { get; set; }
+
+        private static string error = "There was some errorr";
+        public static bool IsEqual(register user1,register user2)
+        {
+            if(user1==null || user2==null)
+            {
+                return false;
+            }
+            if(user1.username!=user2.username)
+            {
+                error = "Username doesnt exist!";
+                return false;
+            }
+            if (user1.password != user2.password)
+            {
+                error = "Username and password doesn't match";
+                return false;
+            }
+            return true;
+        }
     }
 }
